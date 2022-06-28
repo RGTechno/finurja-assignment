@@ -1,0 +1,31 @@
+{
+  "banks": [
+    {
+      "name": "HDFC BANK",
+      "logo": "https://1000logos.net/wp-content/uploads/2021/06/HDFC-Bank-emblem.png",
+      "accNo": "xx2652",
+      "balance": "55555",
+      "transactions": [
+        {}
+      ]
+    },
+    {
+      "name": "Federal BANK",
+      "logo": "https://1000logos.net/wp-content/uploads/2021/06/HDFC-Bank-emblem.png",
+      "accNo": "xx4321",
+      "balance": "12314",
+      "transactions": [
+        {}
+      ]
+    },
+    {
+      "name": "SBI BANK",
+      "logo": "https://1000logos.net/wp-content/uploads/2021/06/HDFC-Bank-emblem.png",
+      "accNo": "xx2542",
+      "balance": "4324234",
+      "transactions": [
+        {}
+      ]
+    }
+  ]
+}
