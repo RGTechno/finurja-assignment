@@ -1,6 +1,8 @@
 import 'package:finurja_assign/widgets/transaction_header.dart';
 import 'package:flutter/material.dart';
 
+enum Order { latest, oldest }
+
 class TransactionScreen extends StatefulWidget {
   const TransactionScreen({Key? key}) : super(key: key);
 
@@ -11,10 +13,16 @@ class TransactionScreen extends StatefulWidget {
 class _TransactionScreenState extends State<TransactionScreen> {
   late List<dynamic> _trans;
 
+  Order? _order = Order.latest;
+
   @override
   Widget build(BuildContext context) {
+    // print("latest $_order");
     final data =
-        ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>;
+    ModalRoute
+        .of(context)
+        ?.settings
+        .arguments as Map<String, dynamic>;
     // print(data);
     setState(() {
       _trans = data["transactions"];
@@ -96,11 +104,11 @@ class _TransactionScreenState extends State<TransactionScreen> {
                                 margin: EdgeInsets.symmetric(vertical: 10),
                                 child: Row(
                                   mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                  MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
                                       _trans[idx]["dayTransactions"][i]
-                                          ["title"],
+                                      ["title"],
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 17,
@@ -113,9 +121,9 @@ class _TransactionScreenState extends State<TransactionScreen> {
                                           "\u{20B9} ${_trans[idx]["dayTransactions"][i]["amount"]}",
                                           style: TextStyle(
                                             color: _trans[idx]
-                                                            ["dayTransactions"]
-                                                        [i]["type"] ==
-                                                    "credit"
+                                            ["dayTransactions"]
+                                            [i]["type"] ==
+                                                "credit"
                                                 ? Colors.red
                                                 : Colors.green,
                                             fontWeight: FontWeight.bold,
@@ -123,24 +131,24 @@ class _TransactionScreenState extends State<TransactionScreen> {
                                           ),
                                         ),
                                         _trans[idx]["dayTransactions"][i]
-                                                    ["type"] ==
-                                                "credit"
+                                        ["type"] ==
+                                            "credit"
                                             ? Transform.rotate(
-                                                angle: 2,
-                                                child: Icon(
-                                                  Icons.arrow_right_alt_rounded,
-                                                  color: Colors.green,
-                                                  size: 20,
-                                                ),
-                                              )
+                                          angle: 2,
+                                          child: Icon(
+                                            Icons.arrow_right_alt_rounded,
+                                            color: Colors.green,
+                                            size: 20,
+                                          ),
+                                        )
                                             : Transform.rotate(
-                                                angle: -1.1,
-                                                child: Icon(
-                                                  Icons.arrow_right_alt_rounded,
-                                                  color: Colors.red,
-                                                  size: 20,
-                                                ),
-                                              )
+                                          angle: -1.1,
+                                          child: Icon(
+                                            Icons.arrow_right_alt_rounded,
+                                            color: Colors.red,
+                                            size: 20,
+                                          ),
+                                        )
                                       ],
                                     ),
                                   ],
@@ -168,22 +176,67 @@ class _TransactionScreenState extends State<TransactionScreen> {
     showModalBottomSheet<void>(
       context: ctx,
       builder: (BuildContext context) {
-        return Container(
-          height: 600,
-          child: Column(
-            children: [
-              Align(
-                alignment: Alignment.topRight,
-                child: IconButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  icon: Icon(Icons.cancel_rounded),
+        return StatefulBuilder(
+            builder: (BuildContext context, StateSetter setState) {
+              return Container(
+                height: 600,
+                padding: EdgeInsets.symmetric(
+                  vertical: 5,
+                  horizontal: 10,
                 ),
-              ),
-            ],
-          ),
-        );
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Align(
+                      alignment: Alignment.topRight,
+                      child: IconButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        icon: Icon(Icons.cancel_rounded),
+                      ),
+                    ),
+                    Text(
+                      "Sort & Filter",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 23,
+                      ),
+                    ),
+                    Divider(thickness: 1),
+                    SizedBox(height: 15),
+                    Text(
+                      "Sort by time",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black54,
+                        fontSize: 17,
+                      ),
+                    ),
+                    RadioListTile<Order>(
+                      title: const Text('Latest to Oldest'),
+                      value: Order.latest,
+                      groupValue: _order,
+                      onChanged: (Order? value) {
+                        setState(() {
+                          _order = value;
+                        });
+                      },
+                    ),
+                    RadioListTile<Order>(
+                      title: const Text('Oldest to Latest'),
+                      value: Order.oldest,
+                      groupValue: _order,
+                      onChanged: (Order? value) {
+                        setState(() {
+                          _order = value;
+                        });
+                      },
+                    ),
+                  ],
+                ),
+              );
+            });
       },
     );
   }
