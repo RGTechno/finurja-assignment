@@ -6,7 +6,86 @@
       "accNo": "xx2652",
       "balance": "55555",
       "transactions": [
-        {}
+        {
+          "date": "08/02/2022",
+          "dayTransactions": [
+            {
+              "title": "PGVCL Electricity Bill",
+              "type": "debit",
+              "amount": "2500.00"
+            }
+          ]
+        },
+        {
+          "date": "03/02/2022",
+          "dayTransactions": [
+            {
+              "title": "ATM Withdrawal",
+              "type": "debit",
+              "amount": "5500.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "39000.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "40000.00"
+            }
+          ]
+        },
+        {
+          "date": "02/02/2022",
+          "dayTransactions": [
+            {
+              "title": "ATM Withdrawal",
+              "type": "debit",
+              "amount": "5500.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "39000.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "40000.00"
+            }
+          ]
+        },
+        {
+          "date": "01/02/2022",
+          "dayTransactions": [
+            {
+              "title": "ATM Withdrawal",
+              "type": "debit",
+              "amount": "500.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "200.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "4500.00"
+            }
+          ]
+        },
+        {
+          "date": "08/01/2022",
+          "dayTransactions": [
+            {
+              "title": "ATM Withdrawal",
+              "type": "debit",
+              "amount": "100.00"
+            }
+          ]
+        }
       ]
     },
     {
@@ -15,7 +94,86 @@
       "accNo": "xx4321",
       "balance": "12314",
       "transactions": [
-        {}
+        {
+          "date": "08/02/2022",
+          "dayTransactions": [
+            {
+              "title": "PGVCL Electricity Bill",
+              "type": "debit",
+              "amount": "2500.00"
+            }
+          ]
+        },
+        {
+          "date": "03/02/2022",
+          "dayTransactions": [
+            {
+              "title": "ATM Withdrawal",
+              "type": "debit",
+              "amount": "5500.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "39000.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "40000.00"
+            }
+          ]
+        },
+        {
+          "date": "02/02/2022",
+          "dayTransactions": [
+            {
+              "title": "ATM Withdrawal",
+              "type": "debit",
+              "amount": "5500.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "39000.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "40000.00"
+            }
+          ]
+        },
+        {
+          "date": "01/02/2022",
+          "dayTransactions": [
+            {
+              "title": "ATM Withdrawal",
+              "type": "debit",
+              "amount": "500.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "200.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "4500.00"
+            }
+          ]
+        },
+        {
+          "date": "08/01/2022",
+          "dayTransactions": [
+            {
+              "title": "ATM Withdrawal",
+              "type": "debit",
+              "amount": "100.00"
+            }
+          ]
+        }
       ]
     },
     {
@@ -24,7 +182,86 @@
       "accNo": "xx2542",
       "balance": "4324234",
       "transactions": [
-        {}
+        {
+          "date": "08/02/2022",
+          "dayTransactions": [
+            {
+              "title": "PGVCL Electricity Bill",
+              "type": "debit",
+              "amount": "2500.00"
+            }
+          ]
+        },
+        {
+          "date": "03/02/2022",
+          "dayTransactions": [
+            {
+              "title": "ATM Withdrawal",
+              "type": "debit",
+              "amount": "5500.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "39000.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "40000.00"
+            }
+          ]
+        },
+        {
+          "date": "02/02/2022",
+          "dayTransactions": [
+            {
+              "title": "ATM Withdrawal",
+              "type": "debit",
+              "amount": "5500.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "39000.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "40000.00"
+            }
+          ]
+        },
+        {
+          "date": "01/02/2022",
+          "dayTransactions": [
+            {
+              "title": "ATM Withdrawal",
+              "type": "debit",
+              "amount": "500.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "200.00"
+            },
+            {
+              "title": "ATM Deposit",
+              "type": "credit",
+              "amount": "4500.00"
+            }
+          ]
+        },
+        {
+          "date": "08/01/2022",
+          "dayTransactions": [
+            {
+              "title": "ATM Withdrawal",
+              "type": "debit",
+              "amount": "100.00"
+            }
+          ]
+        }
       ]
     }
   ]
