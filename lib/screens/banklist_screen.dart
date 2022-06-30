@@ -37,10 +37,11 @@ class _BankListScreenState extends State<BankListScreen> {
         title: const Text("All Bank Accounts"),
         centerTitle: true,
         toolbarHeight: 75,
+        backgroundColor: Color(0xff213b8e),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: const Icon(Icons.menu),
+            icon: const Icon(Icons.more_vert_outlined),
           ),
         ],
       ),

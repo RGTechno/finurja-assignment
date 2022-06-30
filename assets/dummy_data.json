@@ -7,7 +7,7 @@
       "balance": "55555",
       "transactions": [
         {
-          "date": "08/02/2022",
+          "date": "2022/02/08",
           "dayTransactions": [
             {
               "title": "PGVCL Electricity Bill",
@@ -17,7 +17,7 @@
           ]
         },
         {
-          "date": "03/02/2022",
+          "date": "2022/02/03",
           "dayTransactions": [
             {
               "title": "ATM Withdrawal",
@@ -37,7 +37,7 @@
           ]
         },
         {
-          "date": "02/02/2022",
+          "date": "2021/08/05",
           "dayTransactions": [
             {
               "title": "ATM Withdrawal",
@@ -57,7 +57,7 @@
           ]
         },
         {
-          "date": "01/02/2022",
+          "date": "2021/05/12",
           "dayTransactions": [
             {
               "title": "ATM Withdrawal",
@@ -77,7 +77,7 @@
           ]
         },
         {
-          "date": "08/01/2022",
+          "date": "2021/04/14",
           "dayTransactions": [
             {
               "title": "ATM Withdrawal",
@@ -95,7 +95,7 @@
       "balance": "12314",
       "transactions": [
         {
-          "date": "08/02/2022",
+          "date": "2022/02/08",
           "dayTransactions": [
             {
               "title": "PGVCL Electricity Bill",
@@ -105,7 +105,7 @@
           ]
         },
         {
-          "date": "03/02/2022",
+          "date": "2022/02/03",
           "dayTransactions": [
             {
               "title": "ATM Withdrawal",
@@ -125,7 +125,7 @@
           ]
         },
         {
-          "date": "02/02/2022",
+          "date": "2021/08/05",
           "dayTransactions": [
             {
               "title": "ATM Withdrawal",
@@ -145,7 +145,7 @@
           ]
         },
         {
-          "date": "01/02/2022",
+          "date": "2021/05/12",
           "dayTransactions": [
             {
               "title": "ATM Withdrawal",
@@ -165,7 +165,7 @@
           ]
         },
         {
-          "date": "08/01/2022",
+          "date": "2021/04/14",
           "dayTransactions": [
             {
               "title": "ATM Withdrawal",
@@ -183,7 +183,7 @@
       "balance": "4324234",
       "transactions": [
         {
-          "date": "08/02/2022",
+          "date": "2022/02/08",
           "dayTransactions": [
             {
               "title": "PGVCL Electricity Bill",
@@ -193,7 +193,7 @@
           ]
         },
         {
-          "date": "03/02/2022",
+          "date": "2022/02/03",
           "dayTransactions": [
             {
               "title": "ATM Withdrawal",
@@ -213,7 +213,7 @@
           ]
         },
         {
-          "date": "02/02/2022",
+          "date": "2021/08/05",
           "dayTransactions": [
             {
               "title": "ATM Withdrawal",
@@ -233,7 +233,7 @@
           ]
         },
         {
-          "date": "01/02/2022",
+          "date": "2021/05/12",
           "dayTransactions": [
             {
               "title": "ATM Withdrawal",
@@ -253,7 +253,7 @@
           ]
         },
         {
-          "date": "08/01/2022",
+          "date": "2021/04/14",
           "dayTransactions": [
             {
               "title": "ATM Withdrawal",
