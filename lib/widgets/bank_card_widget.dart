@@ -19,6 +19,7 @@ class BankCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final mediaQuery = MediaQuery.of(context);
     return Column(
       children: [
         Container(
@@ -36,7 +37,7 @@ class BankCard extends StatelessWidget {
                     width: 30,
                   ),
                   //Bank Name
-                  SizedBox(width: 15),
+                  SizedBox(width: mediaQuery.size.width*0.04),
                   Text(
                     name,
                     style: TextStyle(
@@ -46,7 +47,7 @@ class BankCard extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 10),
+              SizedBox(height: mediaQuery.size.height*0.015),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -96,7 +97,7 @@ class BankCard extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              SizedBox(height: mediaQuery.size.height*0.015),
               Align(
                 alignment: Alignment.bottomRight,
                 child: TextButton(
